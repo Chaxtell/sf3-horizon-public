@@ -1,0 +1,498 @@
+{
+  "actuallyadditions": {
+    "credits": "Port of ActuallyAdditions-1.10.2-r105.jar from FTB Presents SkyFactory 3",
+    "homepage": "https://modrinth.com/mod/actually-additions",
+    "license": "MIT"
+  },
+  "advgenerators": {
+    "credits": "Port of generators-0.9.20.23-mc1.10.2.jar from FTB Presents SkyFactory 3",
+    "license": "unknown (not on Modrinth; see the mod's page)"
+  },
+  "apple_shields": {
+    "credits": "Port of AppleShields-0.1.7.jar from FTB Presents SkyFactory 3",
+    "license": "unknown (not on Modrinth; see the mod's page)"
+  },
+  "autopackager": {
+    "credits": "Port of autopackager-1.6.4b.jar from FTB Presents SkyFactory 3",
+    "license": "unknown (not on Modrinth; see the mod's page)"
+  },
+  "baconators": {
+    "credits": "Port of baconators-1.10.2-3.0.6.jar from FTB Presents SkyFactory 3",
+    "license": "unknown (not on Modrinth; see the mod's page)"
+  },
+  "baubles": {
+    "credits": "Port of Baubles-1.10.2-1.3.13.jar from FTB Presents SkyFactory 3",
+    "license": "unknown (not on Modrinth; see the mod's page)"
+  },
+  "beneath": {
+    "credits": "Port of The Beneath-1.10.2-1.2.0.jar from FTB Presents SkyFactory 3",
+    "license": "unknown (not on Modrinth; see the mod's page)"
+  },
+  "betterbuilderswands": {
+    "credits": "Port of BetterBuildersWands-1.10.2-0.11.1.220+f8232fe.jar from FTB Presents SkyFactory 3",
+    "homepage": "https://modrinth.com/mod/better-builders-wands",
+    "license": "LicenseRef-All-Rights-Reserved"
+  },
+  "bigreactors": {
+    "credits": "Port of ExtremeReactors-1.10.2-0.4.5.30.jar from FTB Presents SkyFactory 3",
+    "license": "unknown (not on Modrinth; see the mod's page)"
+  },
+  "bitdrawers": {
+    "credits": "Port of DrawersBits-1.10.2-0.36.jar from FTB Presents SkyFactory 3",
+    "license": "unknown (not on Modrinth; see the mod's page)"
+  },
+  "bloodmagic": {
+    "credits": "Port of BloodMagic-1.10.2-2.1.11-80.jar from FTB Presents SkyFactory 3",
+    "homepage": "https://modrinth.com/mod/blood-magic",
+    "license": "CC-BY-4.0"
+  },
+  "bookshelf": {
+    "credits": "Port of Bookshelf-1.10.2-1.4.4.347.jar from FTB Presents SkyFactory 3",
+    "homepage": "https://modrinth.com/mod/bookshelf-lib",
+    "license": "LGPL-2.1-only"
+  },
+  "boots": {
+    "credits": "Port of LongFallBoots - Hard Mode.jar from FTB Presents SkyFactory 3",
+    "license": "unknown (not on Modrinth; see the mod's page)"
+  },
+  "botania": {
+    "credits": "Port of Botania r1.9-341.jar from FTB Presents SkyFactory 3",
+    "license": "LicenseRef-Botania-License"
+  },
+  "ceramics": {
+    "credits": "Port of Ceramics-1.10.2-1.1.6b.jar from FTB Presents SkyFactory 3",
+    "homepage": "https://modrinth.com/mod/ceramics",
+    "license": "MIT"
+  },
+  "chancecubes": {
+    "credits": "Port of ChanceCubes-1.10.2-3.1.1.221.jar from FTB Presents SkyFactory 3",
+    "homepage": "https://modrinth.com/mod/chance-cubes",
+    "license": "GPL-3.0-only"
+  },
+  "charsetaudio": {
+    "credits": "Port of Charset-0.3.9.jar from FTB Presents SkyFactory 3",
+    "license": "unknown (not on Modrinth; see the mod's page)"
+  },
+  "charsetdecoration": {
+    "credits": "Port of Charset-0.3.9.jar from FTB Presents SkyFactory 3",
+    "license": "unknown (not on Modrinth; see the mod's page)"
+  },
+  "charsetgates": {
+    "credits": "Port of Charset-0.3.9.jar from FTB Presents SkyFactory 3",
+    "license": "unknown (not on Modrinth; see the mod's page)"
+  },
+  "charsetlib": {
+    "credits": "Port of Charset-0.3.9.jar from FTB Presents SkyFactory 3",
+    "license": "unknown (not on Modrinth; see the mod's page)"
+  },
+  "charsetpipes": {
+    "credits": "Port of Charset-0.3.9.jar from FTB Presents SkyFactory 3",
+    "license": "unknown (not on Modrinth; see the mod's page)"
+  },
+  "charsetstorage": {
+    "credits": "Port of Charset-0.3.9.jar from FTB Presents SkyFactory 3",
+    "license": "unknown (not on Modrinth; see the mod's page)"
+  },
+  "charsettweaks": {
+    "credits": "Port of Charset-0.3.9.jar from FTB Presents SkyFactory 3",
+    "license": "unknown (not on Modrinth; see the mod's page)"
+  },
+  "charsetwrench": {
+    "credits": "Port of Charset-0.3.9.jar from FTB Presents SkyFactory 3",
+    "license": "unknown (not on Modrinth; see the mod's page)"
+  },
+  "chesttransporter": {
+    "credits": "Port of ChestTransporter-1.10.2-2.5.18.jar from FTB Presents SkyFactory 3",
+    "license": "unknown (not on Modrinth; see the mod's page)"
+  },
+  "chickenchunks": {
+    "credits": "Port of ChickenChunks-1.10.2-2.2.0.52-universal.jar from FTB Presents SkyFactory 3",
+    "homepage": "https://modrinth.com/mod/chicken-chunks",
+    "license": "MIT"
+  },
+  "chickens": {
+    "credits": "Port of chickens-4.3.2.jar from FTB Presents SkyFactory 3",
+    "license": "unknown (not on Modrinth; see the mod's page)"
+  },
+  "chisel": {
+    "credits": "Port of Chisel-MC1.10.2-0.2.1.47.jar from FTB Presents SkyFactory 3",
+    "license": "unknown (not on Modrinth; see the mod's page)"
+  },
+  "chiselsandbits": {
+    "credits": "Port of chiselsandbits-12.18.jar from FTB Presents SkyFactory 3",
+    "license": "unknown (not on Modrinth; see the mod's page)"
+  },
+  "clipboard": {
+    "credits": "Port of Clipboard-1.10.2-1.1.1.jar from FTB Presents SkyFactory 3",
+    "license": "unknown (not on Modrinth; see the mod's page)"
+  },
+  "colossalchests": {
+    "credits": "Port of ColossalChests-1.10.2-1.6.0.jar from FTB Presents SkyFactory 3",
+    "license": "unknown (not on Modrinth; see the mod's page)"
+  },
+  "cookingforblockheads": {
+    "credits": "Port of CookingForBlockheads_1.10.2-4.2.45.jar from FTB Presents SkyFactory 3",
+    "license": "unknown (not on Modrinth; see the mod's page)"
+  },
+  "darkutils": {
+    "credits": "Port of DarkUtilities-1.1.8.finalrc2.jar from FTB Presents SkyFactory 3",
+    "homepage": "https://modrinth.com/mod/dark-utilities",
+    "license": "LGPL-2.1-only"
+  },
+  "dimensionalcake": {
+    "credits": "Port of dimensionalcake-1.9.4-0.0.1.jar from FTB Presents SkyFactory 3",
+    "license": "unknown (not on Modrinth; see the mod's page)"
+  },
+  "draconicevolution": {
+    "credits": "Port of Draconic-Evolution-1.10.2-2.1.8.273-universal.jar from FTB Presents SkyFactory 3",
+    "homepage": "https://modrinth.com/mod/draconic-evolution",
+    "license": "LicenseRef-CoFH-Dont-Be-a-Jerk-License"
+  },
+  "dragonmounts": {
+    "credits": "Port of DragonMounts-r46-1.10.2.jar from FTB Presents SkyFactory 3",
+    "homepage": "https://modrinth.com/mod/dragon-mounts",
+    "license": "LicenseRef-All-Rights-Reserved"
+  },
+  "elevatorid": {
+    "credits": "Port of ElevatorMod[V.1.3.0][MC.1.10.2].jar from FTB Presents SkyFactory 3",
+    "license": "unknown (not on Modrinth; see the mod's page)"
+  },
+  "enderio": {
+    "credits": "Port of EnderIO-1.10.2-3.1.193.jar from FTB Presents SkyFactory 3",
+    "license": "unknown (not on Modrinth; see the mod's page)"
+  },
+  "enderstorage": {
+    "credits": "Port of EnderStorage-1.10.2-2.2.1.106-universal.jar from FTB Presents SkyFactory 3",
+    "homepage": "https://modrinth.com/mod/ender-storage",
+    "license": "MIT"
+  },
+  "energyconverters": {
+    "credits": "Port of energyconverters_1.10.2-1.0.0.26.jar from FTB Presents SkyFactory 3",
+    "license": "unknown (not on Modrinth; see the mod's page)"
+  },
+  "engineersworkshop": {
+    "credits": "Port of EngineersWorkshop-1.3.7-1.10.2.jar from FTB Presents SkyFactory 3",
+    "license": "unknown (not on Modrinth; see the mod's page)"
+  },
+  "environmentaltech": {
+    "credits": "Port of environmentaltech-1.10.2-0.10.6b.jar from FTB Presents SkyFactory 3",
+    "homepage": "https://modrinth.com/mod/environmental-tech",
+    "license": "LicenseRef-All-Rights-Reserved"
+  },
+  "etlunar": {
+    "credits": "Port of etlunar-1.10.2-0.10.6a.jar from FTB Presents SkyFactory 3",
+    "homepage": "https://modrinth.com/mod/environmental-lunar-tech",
+    "license": "LicenseRef-All-Rights-Reserved"
+  },
+  "excompressum": {
+    "credits": "Port of ExCompressum_1.10.2-2.0.97.jar from FTB Presents SkyFactory 3",
+    "license": "unknown (not on Modrinth; see the mod's page)"
+  },
+  "exnihiloadscensio": {
+    "credits": "Port of exnihiloadscensio-1.10.2-0.1.20.jar from FTB Presents SkyFactory 3",
+    "license": "unknown (not on Modrinth; see the mod's page)"
+  },
+  "extrabitmanipulation": {
+    "credits": "Port of ExtraBitManipulation-1.10.2-2.6.2.jar from FTB Presents SkyFactory 3",
+    "license": "unknown (not on Modrinth; see the mod's page)"
+  },
+  "extrautils2": {
+    "credits": "Port of extrautils2-1.10.2-1.9.9.jar from FTB Presents SkyFactory 3",
+    "license": "unknown (not on Modrinth; see the mod's page)"
+  },
+  "fairylights": {
+    "credits": "Port of fairylights-2.1.3-1.10.2.jar from FTB Presents SkyFactory 3",
+    "license": "unknown (not on Modrinth; see the mod's page)"
+  },
+  "farmingforblockheads": {
+    "credits": "Port of FarmingForBlockheads_1.10.2-1.1.16.jar from FTB Presents SkyFactory 3",
+    "license": "unknown (not on Modrinth; see the mod's page)"
+  },
+  "fenceoverhaul": {
+    "credits": "Port of [1.10.x]FenceOverhaul-1.2.1.jar from FTB Presents SkyFactory 3",
+    "license": "unknown (not on Modrinth; see the mod's page)"
+  },
+  "flatcoloredblocks": {
+    "credits": "Port of flatcoloredblocks-mc1.10-v4.4.jar from FTB Presents SkyFactory 3",
+    "license": "unknown (not on Modrinth; see the mod's page)"
+  },
+  "fluxnetworks": {
+    "credits": "Port of FluxNetworks-1.10.2-1.2.8.jar from FTB Presents SkyFactory 3",
+    "license": "unknown (not on Modrinth; see the mod's page)"
+  },
+  "flyringbaublemod": {
+    "credits": "Port of angelRingToBauble-1.10.2-0.2.4.19+d71eb9e.jar from FTB Presents SkyFactory 3",
+    "license": "unknown (not on Modrinth; see the mod's page)"
+  },
+  "funnels": {
+    "credits": "Port of Funnels-1.10.2-1.1.2.jar from FTB Presents SkyFactory 3",
+    "license": "unknown (not on Modrinth; see the mod's page)"
+  },
+  "gravestone": {
+    "credits": "Port of gravestone-1.5.13.jar from FTB Presents SkyFactory 3",
+    "license": "unknown (not on Modrinth; see the mod's page)"
+  },
+  "gyth": {
+    "credits": "Port of Gyth-1.10.2-2.0.0.27.jar from FTB Presents SkyFactory 3",
+    "homepage": "https://modrinth.com/mod/get-ya-tanks-here",
+    "license": "LicenseRef-All-Rights-Reserved"
+  },
+  "hammercore": {
+    "credits": "Port of HammerCore-1.10.2-1.9.4.3.jar from FTB Presents SkyFactory 3",
+    "homepage": "https://modrinth.com/mod/hammer-lib",
+    "license": "LicenseRef-All-Rights-Reserved"
+  },
+  "harvestcraft": {
+    "credits": "Port of Pam's HarvestCraft 1.9.4-1.10.2h.jar from FTB Presents SkyFactory 3",
+    "license": "unknown (not on Modrinth; see the mod's page)"
+  },
+  "hatchery": {
+    "credits": "Port of hatchery-1.10.2-0.3.22.jar from FTB Presents SkyFactory 3",
+    "license": "unknown (not on Modrinth; see the mod's page)"
+  },
+  "headcrumbs": {
+    "credits": "Port of Headcrumbs-2.0.3.jar from FTB Presents SkyFactory 3",
+    "license": "unknown (not on Modrinth; see the mod's page)"
+  },
+  "hopperducts": {
+    "credits": "Port of hopperducts-mc1.9.4-1.4.8.1.jar from FTB Presents SkyFactory 3",
+    "license": "unknown (not on Modrinth; see the mod's page)"
+  },
+  "hydrogel": {
+    "credits": "Port of hydrogel-0.9.jar from FTB Presents SkyFactory 3",
+    "license": "unknown (not on Modrinth; see the mod's page)"
+  },
+  "immersiveengineering": {
+    "credits": "Port of ImmersiveEngineering-0.10-61.jar from FTB Presents SkyFactory 3",
+    "license": "unknown (not on Modrinth; see the mod's page)"
+  },
+  "integrateddynamics": {
+    "credits": "Port of IntegratedDynamics-1.10.2-0.7.12.jar from FTB Presents SkyFactory 3",
+    "license": "unknown (not on Modrinth; see the mod's page)"
+  },
+  "integratedtunnels": {
+    "credits": "Port of IntegratedTunnels-1.10.2-1.2.5.jar from FTB Presents SkyFactory 3",
+    "license": "unknown (not on Modrinth; see the mod's page)"
+  },
+  "ironbackpacks": {
+    "credits": "Port of IronBackpacks-1.10.2-2.2.33.jar from FTB Presents SkyFactory 3",
+    "license": "unknown (not on Modrinth; see the mod's page)"
+  },
+  "ironchest": {
+    "credits": "Port of ironchest-1.10.2-7.0.15.804.jar from FTB Presents SkyFactory 3",
+    "license": "unknown (not on Modrinth; see the mod's page)"
+  },
+  "literalascension": {
+    "credits": "Port of literalascension-1.10.2-1.0.2.2.jar from FTB Presents SkyFactory 3",
+    "license": "unknown (not on Modrinth; see the mod's page)"
+  },
+  "lootbags": {
+    "credits": "Port of LootBags-1.10.2-2.5.0.jar from FTB Presents SkyFactory 3",
+    "license": "unknown (not on Modrinth; see the mod's page)"
+  },
+  "minicoal": {
+    "credits": "Port of minicoal-1.1.0.jar from FTB Presents SkyFactory 3",
+    "license": "unknown (not on Modrinth; see the mod's page)"
+  },
+  "missing_pieces": {
+    "credits": "Port of missing_pieces-1.10.2-4.3.0.jar from FTB Presents SkyFactory 3",
+    "license": "unknown (not on Modrinth; see the mod's page)"
+  },
+  "moarsigns": {
+    "credits": "Port of MoarSigns-1.10.2-4.2.3.9.jar from FTB Presents SkyFactory 3",
+    "license": "unknown (not on Modrinth; see the mod's page)"
+  },
+  "mob_grinding_utils": {
+    "credits": "Port of MobGrindingUtils-0.1.8.22.jar from FTB Presents SkyFactory 3",
+    "license": "unknown (not on Modrinth; see the mod's page)"
+  },
+  "morechickens": {
+    "credits": "Port of MoreChickens-1.10.2-1.1.6.jar from FTB Presents SkyFactory 3",
+    "license": "unknown (not on Modrinth; see the mod's page)"
+  },
+  "moreshears": {
+    "credits": "Port of moreshears-1.10.2-1.0.5-release.jar from FTB Presents SkyFactory 3",
+    "license": "unknown (not on Modrinth; see the mod's page)"
+  },
+  "mysticalagriculture": {
+    "credits": "Port of mysticalagriculture[1.10.2]-1.5.8.jar from FTB Presents SkyFactory 3",
+    "license": "MIT"
+  },
+  "natura": {
+    "credits": "Port of natura-1.10.2-4.1.0.80.jar from FTB Presents SkyFactory 3",
+    "license": "unknown (not on Modrinth; see the mod's page)"
+  },
+  "nice": {
+    "credits": "Port of nice-0.1.0.jar from FTB Presents SkyFactory 3",
+    "homepage": "https://modrinth.com/mod/xnicex",
+    "license": "MIT"
+  },
+  "notenoughwands": {
+    "credits": "Port of notenoughwands-1.1x-1.5.5.jar from FTB Presents SkyFactory 3",
+    "homepage": "https://modrinth.com/mod/not-enough-wands",
+    "license": "MIT"
+  },
+  "opencomputers": {
+    "credits": "Port of OpenComputers-MC1.10.2-1.7.5.245.jar from FTB Presents SkyFactory 3",
+    "homepage": "https://modrinth.com/mod/opencomputers",
+    "license": "MIT"
+  },
+  "packingtape": {
+    "credits": "Port of PackingTape-1.10.2-0.6.0.jar from FTB Presents SkyFactory 3",
+    "license": "unknown (not on Modrinth; see the mod's page)"
+  },
+  "platforms": {
+    "credits": "Port of platforms-1.10.0-1.2.10.jar from FTB Presents SkyFactory 3",
+    "license": "unknown (not on Modrinth; see the mod's page)"
+  },
+  "props": {
+    "credits": "Port of Decocraft-2.5.2_1.10.2.jar from FTB Presents SkyFactory 3",
+    "license": "unknown (not on Modrinth; see the mod's page)"
+  },
+  "psi": {
+    "credits": "Port of Psi-r1.0-42.jar from FTB Presents SkyFactory 3",
+    "license": "unknown (not on Modrinth; see the mod's page)"
+  },
+  "quantumstorage": {
+    "credits": "Port of QuantumStorage-1.10.2-3.3.6.jar from FTB Presents SkyFactory 3",
+    "license": "unknown (not on Modrinth; see the mod's page)"
+  },
+  "randomthings": {
+    "credits": "Port of RandomThings-MC1.10.2-3.7.7.1.jar from FTB Presents SkyFactory 3",
+    "license": "unknown (not on Modrinth; see the mod's page)"
+  },
+  "rangedpumps": {
+    "credits": "Port of rangedpumps-0.3.jar from FTB Presents SkyFactory 3",
+    "homepage": "https://modrinth.com/mod/ranged-pumps",
+    "license": "MIT"
+  },
+  "rebornstorage": {
+    "credits": "Port of RebornStorage-1.10.2-1.0.3.30.jar from FTB Presents SkyFactory 3",
+    "homepage": "https://modrinth.com/mod/rebornstorage",
+    "license": "MIT"
+  },
+  "redstonepaste": {
+    "credits": "Port of redstonepaste-mc1.9.4-1.7.4.jar from FTB Presents SkyFactory 3",
+    "license": "unknown (not on Modrinth; see the mod's page)"
+  },
+  "refinedstorage": {
+    "credits": "Port of refinedstorage-1.2.26.jar from FTB Presents SkyFactory 3",
+    "homepage": "https://modrinth.com/mod/refined-storage",
+    "license": "MIT"
+  },
+  "reliquia": {
+    "credits": "Port of Reliquia-[1.10.2]-0.0.7.jar from FTB Presents SkyFactory 3",
+    "license": "unknown (not on Modrinth; see the mod's page)"
+  },
+  "rftools": {
+    "credits": "Port of rftools-1.1x-7.16.jar from FTB Presents SkyFactory 3",
+    "homepage": "https://modrinth.com/mod/rftools",
+    "license": "MIT"
+  },
+  "rftoolscontrol": {
+    "credits": "Port of rftoolsctrl-1.1x-1.7.0.jar from FTB Presents SkyFactory 3",
+    "homepage": "https://modrinth.com/mod/rftools-control",
+    "license": "MIT"
+  },
+  "rftoolsdim": {
+    "credits": "Port of rftoolsdim-1.1x-5.05.jar from FTB Presents SkyFactory 3",
+    "homepage": "https://modrinth.com/mod/rftools-dimensions",
+    "license": "MIT"
+  },
+  "roots": {
+    "credits": "Port of roots-0.208.jar from FTB Presents SkyFactory 3",
+    "license": "unknown (not on Modrinth; see the mod's page)"
+  },
+  "rscircuits": {
+    "credits": "Port of SuperCircuitMaker-1.0.4.jar from FTB Presents SkyFactory 3",
+    "license": "unknown (not on Modrinth; see the mod's page)"
+  },
+  "scanner": {
+    "credits": "Port of scanner-1.5.2.jar from FTB Presents SkyFactory 3",
+    "license": "unknown (not on Modrinth; see the mod's page)"
+  },
+  "shear": {
+    "credits": "Port of MoreShearables1.2.1-1.10.2.jar from FTB Presents SkyFactory 3",
+    "license": "unknown (not on Modrinth; see the mod's page)"
+  },
+  "shearmadness": {
+    "credits": "Port of shearmadness-1.10.2-1.7.1.6.jar from FTB Presents SkyFactory 3",
+    "license": "unknown (not on Modrinth; see the mod's page)"
+  },
+  "simpleachievements": {
+    "credits": "Port of SimpleAchievements-MC1.9.4-1.2.2-28.jar from FTB Presents SkyFactory 3",
+    "license": "unknown (not on Modrinth; see the mod's page)"
+  },
+  "simplebarrels": {
+    "credits": "Port of simplebarrels-1.26e.jar from FTB Presents SkyFactory 3",
+    "license": "unknown (not on Modrinth; see the mod's page)"
+  },
+  "simplecorn": {
+    "credits": "Port of simpleCorn-1.10.2-2.2.0.jar from FTB Presents SkyFactory 3",
+    "license": "unknown (not on Modrinth; see the mod's page)"
+  },
+  "simplegenerators": {
+    "credits": "Port of simplegenerators-1.10.2-0.10.6a.jar from FTB Presents SkyFactory 3",
+    "license": "unknown (not on Modrinth; see the mod's page)"
+  },
+  "simplelabels": {
+    "credits": "Port of simplelabels-1-10.2-0.0.3.jar from FTB Presents SkyFactory 3",
+    "license": "unknown (not on Modrinth; see the mod's page)"
+  },
+  "simplyjetpacks": {
+    "credits": "Port of SimplyJetpacks2-1.10.2-2.1.3.55.jar from FTB Presents SkyFactory 3",
+    "license": "unknown (not on Modrinth; see the mod's page)"
+  },
+  "snad": {
+    "credits": "Port of Snad-1.10.2-1.6.09.20a.jar from FTB Presents SkyFactory 3",
+    "license": "unknown (not on Modrinth; see the mod's page)"
+  },
+  "solarfluxreborn": {
+    "credits": "Port of SolarFluxReborn_1.10.2-2.17r.jar from FTB Presents SkyFactory 3",
+    "homepage": "https://modrinth.com/mod/solar-flux-reborn",
+    "license": "LicenseRef-All-Rights-Reserved"
+  },
+  "sonarcore": {
+    "credits": "Port of SonarCore-1.10.2-3.3.0.jar from FTB Presents SkyFactory 3",
+    "license": "unknown (not on Modrinth; see the mod's page)"
+  },
+  "stevescarts": {
+    "credits": "Port of StevesCarts-1.10.2-2.2.0.86.jar from FTB Presents SkyFactory 3",
+    "homepage": "https://modrinth.com/mod/steves-carts-reborn",
+    "license": "MIT"
+  },
+  "storagedrawers": {
+    "credits": "Port of StorageDrawers-1.10.2-3.7.10.jar from FTB Presents SkyFactory 3",
+    "homepage": "https://modrinth.com/mod/storagedrawers",
+    "license": "MIT"
+  },
+  "tconstruct": {
+    "credits": "Port of TConstruct-1.10.2-2.6.5.jar from FTB Presents SkyFactory 3",
+    "license": "unknown (not on Modrinth; see the mod's page)"
+  },
+  "torchmaster": {
+    "credits": "Port of torchmaster_1.10.2-1.4.1.34.jar from FTB Presents SkyFactory 3",
+    "license": "unknown (not on Modrinth; see the mod's page)"
+  },
+  "tp": {
+    "credits": "Port of tinyprogressions-1.10.2-1.1.0.jar from FTB Presents SkyFactory 3",
+    "license": "unknown (not on Modrinth; see the mod's page)"
+  },
+  "translocator": {
+    "credits": "Port of Translocators-1.10.2-2.1.4.55-universal.jar from FTB Presents SkyFactory 3",
+    "homepage": "https://modrinth.com/mod/translocators",
+    "license": "MIT"
+  },
+  "voidcup": {
+    "credits": "Port of voidcup-1.10.2-0.0.1.jar from FTB Presents SkyFactory 3",
+    "license": "unknown (not on Modrinth; see the mod's page)"
+  },
+  "woodenshears": {
+    "credits": "Port of SBM-WoodenShears-1.10.2-0.0.1b2-universal.jar from FTB Presents SkyFactory 3",
+    "license": "unknown (not on Modrinth; see the mod's page)"
+  },
+  "xprings": {
+    "credits": "Port of xprings-1.10-1.3.0.jar from FTB Presents SkyFactory 3",
+    "license": "unknown (not on Modrinth; see the mod's page)"
+  }
+}

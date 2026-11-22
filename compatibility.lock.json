@@ -1,0 +1,53 @@
+{
+  "game": "26.3",
+  "hooks": 415,
+  "horizon_repository": "https://github.com/horizon-rust/horizon",
+  "horizon_revision": "04a26210e31fedf763175dcb05c0b0bdf2fefd21",
+  "horizon_mixins_repository": "https://github.com/horizon-rust/horizon-mixins",
+  "horizon_mixins_revision": "e8cd0aa38cffef49cb2e088ef716baa107148c02",
+  "mixin_schema": 6,
+  "bundles": [
+    {
+      "dir": "01_sf3_skyblock",
+      "id": "sf3_skyblock",
+      "module": "sf3_skyblock",
+      "priority": 50,
+      "version": "0.1.0"
+    },
+    {
+      "dir": "02_sf3_exnihilo",
+      "id": "sf3_exnihilo",
+      "module": "sf3_exnihilo",
+      "priority": 100,
+      "version": "0.1.0"
+    },
+    {
+      "dir": "03_sf3_storage_qol",
+      "id": "sf3_storage_qol",
+      "module": "sf3_storage_qol",
+      "priority": 120,
+      "version": "0.1.0"
+    },
+    {
+      "dir": "04_sf3_tech_power",
+      "id": "sf3_tech_power",
+      "module": "sf3_tech_power",
+      "priority": 150,
+      "version": "0.1.0"
+    },
+    {
+      "dir": "05_sf3_farming",
+      "id": "sf3_farming",
+      "module": "sf3_farming",
+      "priority": 180,
+      "version": "0.1.0"
+    },
+    {
+      "dir": "06_sf3_endgame",
+      "id": "sf3_endgame",
+      "module": "sf3_endgame",
+      "priority": 200,
+      "version": "0.1.0"
+    }
+  ]
+}
