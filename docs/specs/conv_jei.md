@@ -100,12 +100,27 @@ Botania-style outputs `(String, i32)` go straight in: `r.outputs`.
 8. A machine mod calling `register_category`: its tab shows after vanilla's with catalysts and chance lines.
 9. Mod name line in blue italics on a game tooltip; no game tooltip under the overlay.
 
-## Not checked
+## Played (2026-11-23)
 
-Nothing ran in the game. Not checked: native-to-native call from a machine mod; panel layout beside the recipes window
-(`window_width`); whether `transfer_recipe_id` accepts the made-up recipes' ids; the settings file's value format for raw writes;
-the engine HUD sprites `horizon/jei/*` drawing from a mod's `DrawContext`; build time of the data on a large pack (once per world and
-language).
+Build native-0a875da-ec9bc4c18c64, SkyVoid, single player, survival. Fixed this pass: a search with no hits lost the box
+(the panel is now pushed inside the Search dispatch, `lib.rs` `panel_event`).
+
+1. Pass for `torch` and plain words: 137 pages, search filters. Prefix modes not each typed.
+2. Pass: left click opens recipes, U uses, R over an inventory slot (stick) shows its recipes; tabs and pages; Escape closes.
+3. Pass: Torch "+" moved coal and stick into the 2x2 grid, output 4 torches. Shift+"+" not tried.
+4. Partly: coal uses show crafting, smelting (ore to coal, 10s), blasting and smoker-style tabs. Fuel, brewing, anvil, grindstone not opened.
+5. Pass: A adds the bookmark (no "a" typed into search); it is still there after a restart.
+6. Pass in survival with cheat mode on in settings: click gave "Gave 64 [Copper Torch]". Right click one and potions not tried.
+7. Settings page opens (Mod Settings, toggles); cheat toggle acts at once. Ctrl+O not tried.
+8. Machine tabs: seen earlier from the six wired mods; not re-checked here.
+9. Pass: "Minecraft" in blue italics on game tooltips.
+
+Findings (backlog): with the recipes screen open the engine panel draws a tooltip for another item than the one under the cursor;
+the status-effect HUD draws over the panel's first row; Backspace from the agent tools never reaches the search box; right click does
+not clear the box; a restart empties the box; the panel on the creative screen is unchecked; "Controller connected" toast at launch.
+
+Still not checked: native-to-native call from a machine mod; `window_width` layout; settings file value format for raw writes;
+data build time on a large pack.
 
 ## Machine mod wiring (pilot: sf3_immersive)
 

@@ -126,9 +126,21 @@ Kept as `minecraft:custom_data` on the stack (`Tinker` compound: `Tool`, `Materi
 16. `tconstruct:slime_sapling` on `tconstruct:slime_dirt_blue`, `random_tick_speed` 3000: trunk `slime_congealed_green` and
     `slime_leaves_blue` within 600 ticks.
 
+## Played (2026-11-22, build native-0a875da-3f368d77983e, world SkyVoid)
+
+- Items 1-10, 15 and 16 pass. The faucet poured 288 mB molten iron onto a table with a pick head cast and cast
+  `tconstruct:pick_head` (iron); 9 gold ingots melted to 1296 mB and the basin cast `minecraft:gold_block`; an empty bucket on an empty
+  basin does nothing.
+- Fixed while playing: the faucet's pour into a casting table or basin was lost (the engine's fluid insert took nothing); `cast_fill`
+  now writes the pour into the table's own `fluids`.
+- As TiCon does: the faucet drains the smeltery's first liquid the target takes, so an empty basin took molten iron (iron block) before the
+  gold; metal parts are cast only, so iron in the part builder gives nothing.
+
 ## Not checked
 
-Everything in game. In code: whether `event.weapon` is `Some` for a player's melee; whether `player_break_speed` and the
+- In game: the sneaking empty-hand return of unmelted items (item 2); breaking a controller or basin holding items (item 5); the tooltip
+  (item 11, no hover tool); items 12-14 (combat modifiers, dig speed, Autosmelt, Beheading) were skipped.
+- In code: whether `event.weapon` is `Some` for a player's melee; whether `player_break_speed` and the
 stack's `minecraft:tool` double-apply; that client `right_click_block` ends the same-click item use; that `level_tick_post`
 resolves `entity_by_id` for entities of that level; `entity.hurt` with no attacker on the cactus/generic types;
 `FakeHost` covers none of the machines' fluid, slot, tag, time or snbt reads.

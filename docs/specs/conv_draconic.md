@@ -107,3 +107,32 @@ Not converted: none left (every old function has a home above). Not checked in p
 `cargo check` Finished; `cargo test` 40 passed (30 old runtime tests, 10 new glue tests: Flux Gate moves, NBT and item
 data, shield lookup, unique block lists, comet and island shape); `cargo horizon-mod check` passes ("uses 937 items of the API ... Made
 for 0a875da"; the lints left are `FoundStructure` and `StructureError` literals built field by field, which have no `..` form).
+
+## Played (2026-11-22, build native-0a875da-199cf35987cc, world SkyVoid, single player, survival)
+
+- Pass: items 1, 2, 4, 6, 8, 9; item 3 (crystal shield, Guardian kill, implosion crater); item 11 Hoe; item 13 break and place (contents
+  and RF kept).
+- Item 7: the shield, last stand and leg/boot modifiers work. Flight is not playable by the agent (it cannot double-jump).
+- Item 12: the Generator burned coal at 84 RF/t (burn speed 6 x 14 RF) and pushed it into the chest beside it. The checklist's
+  "1,000 RF/t" is the output cap (`GEN_OUT`), not the rate. The Grinder killed a NoAI zombie in its box for 1,760 RF
+  (20 x 1.1 x 80) and the rotten flesh dropped. The Stabilized Spawner took a pig Mob Soul, a Wyvern Core set tier 1, and pigs
+  spawned (the grinder then killed them: porkchops piled up). A `mob_soul` drop from a player kill was not played.
+- Item 14: the Potentiometer (click to power 2) and the Entity Detector lit a lamp. The Celestial Manipulator in "stop rain"
+  spent 256,000 RF and the storm faded; in "sunrise" it warped the time and spent 330,560 RF. Rain Sensor: see the fix below.
+- Fixed while playing:
+  - Draconic Bow (and the xutils Compound Bow): `release_using` gets no entity in this engine, so nothing fired. Both now find the
+    player with `acting_player(host)`.
+  - Chaos Crystal: the "implode in 5 seconds" warning went to nobody; now sent to the breaker.
+  - Rain Sensor gave no signal in a storm under open sky (the first one stood under old glass and stone, sky light 14: correct; the
+    second one had sky light 15 and still gave 0). It now asks the engine's `is_raining_at` above it (rain, open sky, a biome with
+    rain), and logs each change.
+- Not played: item 5 (reactor), item 10 (pedestal, receptacle, portal), item 13 smelting, the Crystal Binder, the Wireless crystal
+  and the Flux/Fluid Gates.
+- Item 13 smelting could not be set up: `item replace` fails for chest slots above 53, and `data merge` on `Items` does not reach the
+  live slots of a mod block entity (Slot is read as a signed int, outside 0..size is dropped). The 256-slot chest screen is taller than
+  the 720p window.
+- The bow took 1,920 RF per full draw, not the "about 240" above.
+- Replay (build native-0a875da-77e23cf3100b): the Rain Sensor lit its lamp in a thunderstorm (pass). The Wyvern Bow fires in survival
+  on build native-0a875da-0d550df9e362 (pass): a full draw spent 1,920 RF (1,000,000 to 998,080) and one arrow (16 to 15). The
+  earlier "fires nothing" was test setup: the test bow carried energy in `custom_data`, not the `sf3:energy` component.
+  The Chaos Crystal warning was not replayed.

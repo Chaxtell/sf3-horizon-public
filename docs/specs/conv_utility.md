@@ -123,12 +123,21 @@ Same names and signatures as other mods' files where they exist (`hand_item`, `s
 13. `simplyjetpacks:jetpack_eio1` worn with energy: flight in survival, fuel drops while flying; `fluxpack_eio1` worn charges a held energy item.
 14. `packingtape:tape` on a chest with paper in the inventory makes `packaged_block`; click puts the chest back with its items; `randomthings:imbue` drink then hit a mob (fire/poison/wither), `imbuing_station` menu crafts in 200 ticks.
 
-## Not checked
+## Played
 
-Nothing was run in game. Unverified against the real engine: that `entity_inside` reaches a `BlockPart` shared with no block entity for the 10 contact
-blocks and that `level_tick_post` sees the queued touches; that `on_item_use_first` fires before the block's own use and is reached for items of other
-mods; that `item_interact_mob` fires for every listed item on every mob; that `entities_in` returns players and item entities; that `fluids` in a block
-entity's nbt is read by `FLUIDS` for a block with `declare_fluids` as for tinkers; that `x::take_experience` (`xp add ... -n points`) runs inside a
-hook; that `replace_data` accepts a vanilla chest's data; that `potential_spawns` receives the category names `torch::blocks` expects; that the jump hook
-fires on the host's own player; `state_string` returning `mod:block[k=v]`. FakeHost cannot read time, weather, light, redstone, entities or block-entity
-reads, so ticks, contacts, elevators and packs have no unit test (the pure rules in `runtime.rs` do).
+2026-11-22/23, builds native-0a875da-c95837* and -ec7680fed557 (clean, no debug lines), SkyVoid, single player, survival unless said.
+
+1. Pass: saw hurts a zombie every 10 ticks under redstone; fire upgrade burns; upgrade in by click, out by sneak with empty hand.
+2. Pass for mobs and facing. Fan does not push item entities; it does push players (backlog).
+3. Pass: items into slots, orbs into xpjuice, hopper below pulls items. Hopper renders as a black cube (backlog).
+4. Pass after fix: the tap now drains the sink's NBT fluid and spills orbs. Orbs spawn inside the tap block (backlog).
+5. Pass: funnel fills to 1000 mB and puts a source below.
+6. Pass: timer pulses and +/-100 ticks; lamp blinks; feeder puts cows in love.
+7. Pass after fix: move plates push continuously (contacts dedup per tick; the old "resting" rule dropped, touches arrive every tick); poison tile hits; spikes deal 5. Re-checked on the clean build: a pig moved 1.6 blocks in 30 ticks. Sneak-on-plate not played.
+8. Pass: mega torch stops natural hostile spawns (Cursed Earth spawns still come, as its own spawner); a thrown pearl lands on the ender tether.
+9. Pass: elevator jump up, sneak down (host jump through `host_jump`).
+10. Pass: teleportation wand 4 XP, moves to the sighted block; illumination wand 3 XP, places a light block; "Not enough experience!" shows in the action bar at 0 XP.
+11. Pass for water take/place and cow milk. Lava and sand not played.
+12. Pass for radius cycling (action bar "Square, radius 3 (25 chunk(s)...)"). Sneak-click shape, relog and break release not played.
+13. Jetpack: fuel drops while thrusting (80000 to 79808). Flight itself from the 2026-11-19 host flight proof; a double-tap jump cannot be sent across tool calls. Flux pack not played.
+14. Pass for tape: chest packed (1 paper used) and unpacked with items intact. Imbue and imbuing station not played.

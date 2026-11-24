@@ -268,3 +268,30 @@ Instance with `sf3_rftools` and `rftools` on; creative unless said; status lines
   - The `sf3:energy` component type registered by this mod and by endgame at once (the type list is deduplicated here, not checked there).
   - The Scanner's 69,000-position scan time at radius 20.
   - `explosion_detonate` before the blocks are rolled when the protector's entity is read.
+
+## Played (2026-11-22, builds native-0a875da-77e23cf3100b and -0d550df9e362, world SkyVoid, creative unless said)
+
+Pass:
+- 1-2: Coal Generator at 60 RF/t; a `powercell_simple` beside it (side set to Input) fills.
+- 3: infused generator runs about 106 RF/t; broken in survival and placed again it keeps `infused`.
+- 4: Machine Infuser raises the item's `custom_data.infused`.
+- 5: two cells on one card share 50,000 / 50,000; the Smart Wrench sets a side's mode.
+- 7: Crafter: sneak click taught the stick recipe; 10 planks gave 20 sticks for 500 RF (10,000 to 9,500); paper, feather and clock change the mode (clock: speed 1).
+- 8: Modular Storage module slot takes only a storage module (cobblestone refused), capacity 100.
+- 9: Filter Module.
+- 10: Syringe goes up one level per hit to 10 (100%); Spawner with the syringe, Matter Beamer linked with the wrench, `matter0` rises, pigs spawn.
+- 11: Environmental Controller with a speed module gives Speed after its effect period.
+- 15: Redstone Transmitter and Receiver: channel 0 lit the lamp, the transmitter on channel 1 put it out, the receiver on channel 1 lit it again.
+  Sequencer: pattern clicks, sneak "Sequencer mode: loop while powered", clock steps the delay 2, 5, 10; at 10 ticks the lamp toggles.
+  (Timer and Counter: PLAYTEST_LOG 2026-11-18.)
+- 18: Storage Scanner (50,000 RF), empty click: "Scanner r8: N inventories, 5 kinds, 217 items (128 minecraft:cobblestone, ...)" in the action bar.
+- 21: Dialing Device: sneak "Receiver selected: minecraft:overworld 50,100,90 (1 known)"; click "Transmitter 42,65,36 dialed to ..."; 1,000 RF paid.
+- 22: Charged Porter: "Porter target: receiver at 50,100,90"; an air click from 40.5 65 40.5 arrived at 50.5 101 90.5 and the porter paid 8,616 RF;
+  with 10 RF: "Not enough power: the teleport needs 8616 RF, the porter holds 10".
+- Earlier passes (PLAYTEST_LOG 2026-11-17/18): 6, 16, 24, Counter, Crafter 2/fast, Env Controller modules.
+
+Found, not fixed (backlog):
+- The scanner line is longer than the screen; the end is cut off.
+- A comparator placed by `/setblock` reads 0 beside both the Modular Storage and a vanilla chest (no neighbour update on setblock); whether it follows a later change was not confirmed.
+
+Not played: 6 replay, 12-14, 17, 18 sneak radius and diamond request, 19, 20 pad ride, 23, 25-29.

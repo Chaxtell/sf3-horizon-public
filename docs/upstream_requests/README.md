@@ -3,7 +3,8 @@
 Posted 2026-11-21, re-checked against main `73123121c7`:
 - 01: https://github.com/horizon-rust/horizon/issues/19568
 - 03: https://github.com/horizon-rust/horizon/issues/19569
-- 04: https://github.com/horizon-rust/horizon/issues/19570 (labels `bug`, `parity` could not be added: no permission)
+- 04: https://github.com/horizon-rust/horizon/issues/19570 (labels `bug`, `parity` could not be added: no permission). Closed: fixed by PR #19606 (RLC248, merged 2026-11-22). Pin bump needed to get it.
+Re-checked 2026-11-21 against main `4529f78913`: 01 still open, no comments; every gate it cites is still on `mods()`/`has_mods`/`listened`. 03 still open, no comments; main has no slot-take hook (menu hooks: Button, Links, QuickMove, SlotRules, StillValid, Transfer). No duplicates found.
 - 02: not posted. Main no longer has `native_menu_input_closed` (only `native_menu_closed(uuid, window)`), so the draft does not apply; redo it against main's menu hooks if still needed.
 
 Earlier note: Checked 2026-11-20, read only. Our pinned engine is `04a26210e3` (2026-11-11); upstream main was `084ae44e40` (2026-11-20), so main has moved a lot (many files reorganised, e.g. `game/modding/`, `game/native_hooks/<hook>.rs`).

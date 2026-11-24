@@ -1,7 +1,7 @@
 """Build content/ mods with Horizon main's cargo-horizon-mod, on copies fixed for main's JSON keys.
 
 content/ stays untouched (the old tool and old game build still use it). Per mod: copy (no target/), rewrite
-item `place_block` -> `block` and fluid files to `sprite` only, add the source mod's `license`, `credits` and
+item `place_block` -> `block` and fluid files to `sprite` (+ `world` where free), add the source mod's `license`, `credits` and
 `homepage` from tools/mod_sources.json to horizon-mod.toml (the old manifest has no such keys), build, check,
 collect the .hmod into <out>/_hmod.
 
@@ -22,17 +22,28 @@ def fix_item(j):
     return j
 
 
-def fix_fluid(j):
-    # Main takes only sprite/tint/world. `world` is left out on purpose: it would generate a block and bucket that
-    # collide with our own block and bucket files ("declared twice").
-    return {"sprite": j["still"]} if "still" in j else {}
+def fix_fluid(j, taken=True):
+    # Main takes only sprite/tint/world. `world` gives the fluid an engine key (tanks and pipes move it only then), but
+    # it also generates block `<id>` and item `<id>_bucket`: given only where no content file already declares those.
+    # shortcut: the 53 fluids with a same-id block file stay look-only, drop those files to give them `world` too.
+    out = {"sprite": j["still"]} if "still" in j else {}
+    if not taken:
+        out["world"] = {}
+    return out
+
+
+def fluid_taken(f):
+    ns, name = f.parts[-4], f.stem
+    data = [d / "data" / ns / "horizon" for d in (ROOT / "content").iterdir()]
+    return any((d / "block" / f"{name}.json").exists() or (d / "item" / f"{name}_bucket.json").exists() for d in data)
 
 
 def rewrite(mod_dir):
     for kind, fix in (("item", fix_item), ("fluid", fix_fluid)):
         for f in mod_dir.glob(f"data/*/horizon/{kind}/*.json"):
             j = json.loads(f.read_text(encoding="utf-8"))
-            f.write_text(json.dumps(fix(j), indent=2) + "\n", encoding="utf-8", newline="\n")
+            fixed = fix(j) if kind == "item" else fix(j, fluid_taken(f))
+            f.write_text(json.dumps(fixed, indent=2) + "\n", encoding="utf-8", newline="\n")
 
 
 def run(cmd, cwd):
@@ -73,6 +84,10 @@ def self_test():
     old = {"template": "minecraft:water", "bucket": "m:x_bucket", "block": "m:x", "still": "m:block/s", "flowing": "m:block/f"}
     assert fix_fluid(old) == {"sprite": "m:block/s"}
     assert fix_fluid({"template": "minecraft:water"}) == {}
+    assert fix_fluid(old, taken=False) == {"sprite": "m:block/s", "world": {}}
+    oil = next((ROOT / "content").glob("*/data/actuallyadditions/horizon/fluid/canola_oil.json"))
+    life = next((ROOT / "content").glob("*/data/bloodmagic/horizon/fluid/life_essence.json"))
+    assert not fluid_taken(oil) and fluid_taken(life)
     print("self-test ok")
 
 

@@ -8,3 +8,5 @@
 __pycache__/
 *.pyc
 .native.lock
+/mods/*/target/
+/mods/*/.horizon/

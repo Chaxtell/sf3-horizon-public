@@ -316,7 +316,7 @@ Opus's cost on envtech. Running: 03 storage_qol, 19 player, 15 logistics.
 
 Open cross-mod point from 19: worn accessories now live in the player Attachment `sf3_player:baubles`; other bundles that read the old `sf3_baubles` data (worn rings, cloaks, laurel) must read that Attachment, which needs the shared library mod.
 | 03 storage_qol | 381k | 16 | 68 | `conv_storage_qol.md` (14 checks) | after Claude's fix: drawer took cobblestone (Count 80), Cobble Gen made 11 in 200 ticks |
-| 15 logistics | 463k | 20 | 48 | `conv_logistics.md` (20 checks) | not played yet |
+| 15 logistics | 463k | 20 | 48 | `conv_logistics.md` (20 checks) | played 2026-11-23 (see its Played section) |
 
 Wave A is converted (6 bundles, 1.94M tokens, 74 agent minutes). Seven mods build and start together in `SkyVoid`.
 `/baubles` opens its chest-style menu (worn effects not played).
@@ -331,8 +331,8 @@ into a library mod (Opus), which also carries the shared accessory Attachment.
 | Bundle | Tokens | Min | Tests | Note | State |
 |---|---|---|---|---|---|
 | 14 tinkers | 393k | 17 | 85 | `conv_tinkers.md` (16 checks) | builds and starts with the others; not played |
-| 06 endgame | 530k | 23 | 102 | `conv_endgame.md` (13 checks) | builds and starts with the others; not played |
-| 13 draconic | 474k | 18 | 40 | `conv_draconic.md` (14 checks) | gates pass; not built with the others yet |
+| 06 endgame | 530k | 23 | 102 | `conv_endgame.md` (13 checks) | played 2026-11-22: all 13 pass (dragon heart fixed) |
+| 13 draconic | 474k | 18 | 40 | `conv_draconic.md` (14 checks) | played 2026-11-22: 1-4, 6, 8, 9, 11, 12, 14 (most) pass; bow, implosion warning and Rain Sensor fixed; 5, 10, chest smelting, gates and crystals not played |
 | 11 rftools | 326k | 14 | 78 (+1 skipped) | `conv_rftools.md` (13 checks) | **partly converted** (about 40%); second worker finishing it |
 
 Running: 17 xutils, 16 utility, 11 rftools part 2.
@@ -346,7 +346,7 @@ Running: 17 xutils, 16 utility, 11 rftools part 2.
   `cargo test -- --skip the_slot_rule_module_ids_match_the_runtime_tables`.
 | 11 rftools part 2 | 363k | 15 | 83 (+1 skipped) | `conv_rftools.md` (26 checks) | all but Screens, Screen Controller and screen modules (need a block-entity text renderer) |
 | 17 xutils | 435k | 15 | 124 | `conv_xutils.md` (13 checks) | starts with the others after Claude's fix |
-| 16 utility | 443k | 17 | 66 | `conv_utility.md` (14 checks) | starts with the others |
+| 16 utility | 443k | 17 | 66 | `conv_utility.md` (14 checks) | played 2026-11-23 (see its Played section) |
 
 Wave B is converted (2.97M tokens, 119 agent minutes for six bundles). Wave C so far:
 
@@ -395,7 +395,7 @@ Open, in order:
    Crash found and fixed the same day: `eprintln!` in `sf3_player` (`living_drops`) panicked with stderr closed and
    stopped the server; `sf3_player` and `sf3_draconic` now log through a `log!` macro that ignores the error.
 2. Play pass: about 350 checklist items in the `conv_*.md` notes and `conv_tech_power_plan.md`. Each note gets a
-   "Played" section; `conv_exnihilo.md`, `conv_skyblock.md` and `conv_storage_qol.md` played 2026-11-21; `conv_bloodmagic.md` played 2026-11-21 (items 13-20 this round; Repulsor and armour tooltip not played) (skyblock: stand fix; items 1, 2, 5, 13 need a new world; storage_qol: items 3, 4, 6, 8, 12, 13 not played); `conv_tech_power_plan.md` machines items 1-5, 9 and reactors items 7, 9 played 2026-11-21 (machines 6-8 and the other reactors items not played); `conv_farming.md` items 1-3, 9-12, 23, 24, 28 played 2026-11-21 (the rest not played); `conv_botania.md` all 14 items played 2026-11-21 (holy cloak and brew drink fixed; tornado rod and pool-top infusion bugs open); `conv_charset.md` items 1, 3-8, 10-13 played 2026-11-21 (gate chain conducted through the gate block, fixed; items 2, 9 and five gate kinds not played).; `conv_player.md` items 7, 9-12 played 2026-11-21 (8 waits on engine `living_drops` on `/kill`; 1-6 not ticked one by one).
+   "Played" section; `conv_exnihilo.md`, `conv_skyblock.md` and `conv_storage_qol.md` played 2026-11-21; `conv_bloodmagic.md` played 2026-11-21 (items 13-20 this round; Repulsor and armour tooltip not played); `conv_rftools.md` mostly played 2026-11-22 (see its Played section); `conv_draconic.md` played 2026-11-22 (5, 10, chest smelting, gates, crystals not played) (skyblock: stand fix; items 1, 2, 5, 13 need a new world; storage_qol: items 3, 4, 6, 8, 12, 13 not played); `conv_tech_power_plan.md` machines items 1-5, 9 and reactors items 7, 9 played 2026-11-21 (machines 6-8 and the other reactors items not played); `conv_farming.md` items 1-3, 9-12, 23, 24, 28 played 2026-11-21 (the rest not played); `conv_botania.md` all 14 items played 2026-11-21 (holy cloak and brew drink fixed; tornado rod and pool-top infusion bugs open); `conv_charset.md` items 1, 3-8, 10-13 played 2026-11-21 (gate chain conducted through the gate block, fixed; items 2, 9 and five gate kinds not played).; `conv_player.md` items 7, 9-12 played 2026-11-21 (8 waits on engine `living_drops` on `/kill`; 1-6 not ticked one by one). `conv_tinkers.md` items 1-10, 15, 16 played 2026-11-22 (faucet into table/basin fixed; 11 hover, 12-14 skipped); `conv_immersive.md` items 1-14 played 2026-11-22 (capacitor loop, pump sources, tank lava fixed; relay/transformer and tesla XP orb not seen); `conv_endgame.md` items 1-13 played 2026-11-22 (Dragon Heart fixed: the engine fires no `living_death` for the dragon, the heart now comes from the `entity_die` game event; LAN-guest paths not played); `conv_utility.md` played 2026-11-23 (plates and XP tap fixed; leftovers in the plan backlog). `conv_logistics.md` all 20 played 2026-11-23 (personal-chest duplication and wood Colossal tool fixed). `conv_jei.md` played 2026-11-23 (1-3, 5, 6, 9 pass; empty-search box fix; fuel/brewing/anvil tabs, Ctrl+O not played).
 3. Void world type is not the default; hopper/pipe item filter has no stable hook (one upstream request covers
    7 bundles); pending upstream drafts in `stable_menus_screens.md`, `jei_stable_route.md`, `worldgen_stable_route.md`.
 4. Adapter merge (`host_ext.rs` files -> `sf3_host` library mod): deferred until after the play pass; the copies
